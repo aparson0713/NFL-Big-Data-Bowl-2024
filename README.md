@@ -26,7 +26,7 @@ Feature Engineering: Creates variables like play types (pass or run), pre-snap p
 
 Visualization and Insights: Uses matplotlib and seaborn to visualize patterns in player movements, play distributions, and team-specific strategies, enhancing interpretability of data trends.
 
-Play Type Prediction Models: Implements logistic regression to classify plays as pass or run, evaluates models using metrics such as ROC-AUC, and emphasizes the importance of integrating tracking and play-by-play features.
+Play Type Prediction Models: Implements GBDT to classify plays as pass or run, evaluates models using metrics such as ROC-AUC, and emphasizes the importance of integrating tracking and play-by-play features.
 
 ## Alex Code
 Random Forest:
