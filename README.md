@@ -30,17 +30,16 @@ Play Type Prediction Models: Implements logistic regression to classify plays as
 
 ## Alex Code
 Random Forest:
-The Random Forest model is used for play-type prediction (run or pass) by training on engineered features like yardline position, offensive formation, and alignment.
-It emphasizes feature importance rankings, identifying key predictors in play outcomes.
+The Random Forest model is used for run location prediction by training on engineered features like yardline position, offensive formation, and alignment.
+This was most accurate model for run location, when combined with team-level PCA groupings. 
 
 XGBoost:
 XGBoost is applied to the same play prediction task, leveraging its efficiency and handling of missing data.
-Advanced hyperparameter tuning is performed to optimize model performance, showing superior accuracy compared to simpler models.
 
-Hybrid Neural Networks:
+Hybrid Neural Network:
 Combines structured data (features) with insights from embeddings derived from tracking or categorical data.
-This hybrid model captures both the granular patterns of individual plays and broader game-level trends.
+This hybrid model combines a GRU and dense layers to capture both the granular patterns of individual plays and broader game-level trends.
 
-Team-Level PCA Groupings:
+Team-Level PCA Groupings (used in both Random Forest and XGBoost):
 Principal Component Analysis (PCA) groups teams based on offensive and defensive play styles, clustering teams with similar tendencies.
 This reduces dimensionality and allows for nuanced insights into how team-specific strategies influence model predictions.
