@@ -43,3 +43,6 @@ This hybrid model combines a GRU and dense layers to capture both the granular p
 Team-Level PCA Groupings (used in both Random Forest and XGBoost):
 Principal Component Analysis (PCA) groups teams based on offensive and defensive play styles, clustering teams with similar tendencies.
 This reduces dimensionality and allows for nuanced insights into how team-specific strategies influence model predictions.
+
+## AI Disclaimer
+AI was used with supervision to write these summaries. Additionally, AI was used frequently when writing code and developing models. 
